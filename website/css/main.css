@@ -551,9 +551,9 @@
     .datepicker.datepicker-primary table tr td span {
       color: #FFFFFF; }
     .datepicker.datepicker-primary:after {
-      border-bottom-color: #378C3F; }
+      border-bottom-color: #0077CC;}
     .datepicker.datepicker-primary.datepicker-orient-top:after {
-      border-top-color: #378C3F; }
+      border-top-color: #0077CC; }
     .datepicker.datepicker-primary .dow {
       color: rgba(255, 255, 255, 0.8); }
     .datepicker.datepicker-primary table tr td.old div,
@@ -1254,13 +1254,13 @@
     top: 1px; }
 
 .btn-primary {
-  background-color: #378C3F;
+  background-color: #0077CC;
   color: #FFFFFF; }
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary:active:focus, .btn-primary:active:hover, .btn-primary.active:focus, .btn-primary.active:hover,
   .show > .btn-primary.dropdown-toggle,
   .show > .btn-primary.dropdown-toggle:focus,
   .show > .btn-primary.dropdown-toggle:hover {
-    background-color: #40a249;
+    background-color: #0077CC;
     color: #FFFFFF;
     box-shadow: none; }
   .btn-primary:hover {
@@ -2598,7 +2598,7 @@ body {
   background-color: #888 !important; }
 
 .bg-primary {
-  background-color: #378C3F !important; }
+  background-color: #0077CC !important; }
 
 .bg-info {
   background-color: #2CA8FF !important; }
@@ -5123,7 +5123,7 @@ Created using IcoMoon - icomoon.io
   /* For Safari 5.1 to 6.0 */
   /* For Opera 11.1 to 12.0 */
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba(55, 140, 63, 0.6));
+  background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba(0, 119, 204, 0.6));
   /* Standard syntax */ }
   .page-header .btn {
     width: 140px; }
@@ -5153,7 +5153,7 @@ Created using IcoMoon - icomoon.io
 
 .cc-profile-image a:before {
   content: "";
-  border: 15px solid rgba(55, 140, 63, 0.6);
+  border: 15px solid rgba(0, 119, 204, 0.6); /* Change green to blue */
   border-radius: 50%;
   height: 180px;
   width: 180px;
@@ -5164,7 +5164,8 @@ Created using IcoMoon - icomoon.io
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   opacity: 0.0;
-  z-index: 99; }
+  z-index: 99;
+}
 
 .cc-profile-image img {
   position: relative;
