@@ -27,12 +27,15 @@
 
  .certification-images {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
 .certification-images img {
-  margin: 0 5px; /* Add some margin between images if needed */
+  margin: 5px; /* Add some margin around each image */
+  max-width: 100%; /* Ensure images don't exceed container width */
+  height: auto; /* Maintain aspect ratio */
 }
 
 .bootstrap-switch {
