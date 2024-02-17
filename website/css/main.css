@@ -24,6 +24,7 @@
  * Copyright 2012-2013 Mattia Larentis
  * http://www.apache.org/licenses/LICENSE-2.0
  */
+
 .bootstrap-switch {
   display: inline-block;
   direction: ltr;
@@ -2327,7 +2328,7 @@ body {
 
 .main {
   position: relative;
-  background: #FFFFFF; }
+  background: rgba(0, 0, 255, 0.5); }
 
 /* Animations */
 .nav-pills .nav-link,
