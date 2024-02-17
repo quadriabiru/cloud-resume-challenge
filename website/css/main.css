@@ -25,6 +25,16 @@
  * http://www.apache.org/licenses/LICENSE-2.0
  */
 
+ .certification-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.certification-images img {
+  margin: 0 5px; /* Add some margin between images if needed */
+}
+
 .bootstrap-switch {
   display: inline-block;
   direction: ltr;
@@ -2328,7 +2338,7 @@ body {
 
 .main {
   position: relative;
-  background: rgba(0, 0, 255, 0.5); }
+  background: #FFFFFF; }
 
 /* Animations */
 .nav-pills .nav-link,
