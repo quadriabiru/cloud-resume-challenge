@@ -38,6 +38,7 @@
   height: auto; /* Maintain aspect ratio */
 }
 
+/* Keep the original styles */
 .resume-entry {
   display: flex;
   margin-bottom: 20px;
@@ -104,12 +105,12 @@
 
 /* Media query for mobile */
 @media screen and (max-width: 767px) {
+  /* Set all sections to occupy full width */
   .resume-details,
-  .education-left,
   .resume-content,
+  .education-left,
   .education-right {
-    flex: 0 0 100%; /* Set width to 100% on smaller screens */
-    margin-right: 0; /* Remove spacing on smaller screens */
+    flex: 0 0 100%;
     padding: 10px; /* Adjust padding for better mobile display */
   }
 }
