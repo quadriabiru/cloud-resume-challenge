@@ -40,14 +40,12 @@
 
 .resume-entry {
   display: flex;
-  flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
   margin-bottom: 20px;
 }
 
 .resume-details {
-  flex: 0 0 100%; /* Set width to 100% on smaller screens */
-  padding-right: 20px;
-  padding-bottom: 20px; /* Add bottom padding to create space between entries */
+  flex: 0 0 300px; /* Width of the left column */
+  padding-right: 20px; /* Spacing between columns */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -55,13 +53,15 @@
   text-align: center; /* Center align text horizontally */
   background-color: rgba(173, 216, 230, 0.7); /* Light blue color */
   padding: 10px; /* Add padding for spacing */
+  height: 300px; /* Set a fixed height */
   overflow: auto; /* Add overflow to handle overflowing content */
 }
 
 .resume-content {
-  flex: 0 0 100%; /* Set width to 100% on smaller screens */
-  padding-right: 20px;
-  padding-bottom: 20px; /* Add bottom padding to create space between entries */
+  flex-grow: 1; /* Allow content to grow to fill remaining space */
+  display: flex;
+  align-items: center; /* Vertically center the content */
+  padding: 20px;
 }
 
 .resume-footer {
@@ -71,20 +71,16 @@
 }
 
 .section-text {
-  color: #333;
-  font-weight: bold;
+  color: #333; /* Set the color to a darker shade for better visibility */
 }
 
 .education-entry {
   display: flex;
-  flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
-  margin-bottom: 20px;
 }
 
 .education-left {
-  flex: 0 0 100%; /* Set width to 100% on smaller screens */
-  padding-right: 20px;
-  padding-bottom: 20px; /* Add bottom padding to create space between entries */
+  flex: 0 0 300px; /* Width of the left box */
+  padding-right: 20px; /* Spacing between boxes */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -96,23 +92,27 @@
 }
 
 .education-right {
-  flex: 0 0 100%; /* Set width to 100% on smaller screens */
-  padding-right: 20px;
-  padding-bottom: 20px; /* Add bottom padding to create space between entries */
   display: flex;
   flex-direction: column;
-  text-align: left; /* Align text to left */
+  text-align: left; /* Vertically center the content */
+  padding: 20px;
 }
 
-@media (min-width: 768px) {
+.section-text {
+  font-weight: bold; /* Make the text thicker */
+}
+
+/* Media query for mobile */
+@media screen and (max-width: 767px) {
   .resume-details,
-  .resume-content,
   .education-left,
+  .resume-content,
   .education-right {
-    flex: 0 0 300px; /* Restore original width on larger screens */
+    flex: 0 0 100%; /* Set width to 100% on smaller screens */
+    margin-right: 0; /* Remove spacing on smaller screens */
+    padding: 10px; /* Adjust padding for better mobile display */
   }
 }
-
 
 .bootstrap-switch {
   display: inline-block;
