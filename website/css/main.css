@@ -40,12 +40,14 @@
 
 .resume-entry {
   display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
   margin-bottom: 20px;
 }
 
 .resume-details {
-  flex: 0 0 300px; /* Width of the left column */
-  padding-right: 20px; /* Spacing between columns */
+  flex: 0 0 100%; /* Set width to 100% on smaller screens */
+  padding-right: 20px;
+  padding-bottom: 20px; /* Add bottom padding to create space between entries */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -57,11 +59,9 @@
 }
 
 .resume-content {
-  flex-grow: 1; /* Allow content to grow to fill remaining space */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 20px;
+  flex: 0 0 100%; /* Set width to 100% on smaller screens */
+  padding-right: 20px;
+  padding-bottom: 20px; /* Add bottom padding to create space between entries */
 }
 
 .resume-footer {
@@ -71,17 +71,20 @@
 }
 
 .section-text {
-  color: #333; /* Set the color to a darker shade for better visibility */
-  font-weight: bold; /* Make the text thicker */
+  color: #333;
+  font-weight: bold;
 }
 
 .education-entry {
   display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+  margin-bottom: 20px;
 }
 
 .education-left {
-  flex: 0 0 300px; /* Width of the left box */
-  padding-right: 20px; /* Spacing between boxes */
+  flex: 0 0 100%; /* Set width to 100% on smaller screens */
+  padding-right: 20px;
+  padding-bottom: 20px; /* Add bottom padding to create space between entries */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -93,18 +96,23 @@
 }
 
 .education-right {
-  flex: 1; /* Allow the right box to expand to fill remaining space */
+  flex: 0 0 100%; /* Set width to 100% on smaller screens */
+  padding-right: 20px;
+  padding-bottom: 20px; /* Add bottom padding to create space between entries */
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  text-align: left; /* Align text to left */
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .resume-details,
-  .education-entry {
-    flex: 0 0 100%; /* Set the width to 100% for single column layout on smaller screens */
+  .resume-content,
+  .education-left,
+  .education-right {
+    flex: 0 0 300px; /* Restore original width on larger screens */
   }
 }
+
 
 .bootstrap-switch {
   display: inline-block;
