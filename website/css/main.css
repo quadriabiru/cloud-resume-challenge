@@ -53,15 +53,14 @@
   text-align: center; /* Center align text horizontally */
   background-color: rgba(173, 216, 230, 0.7); /* Light blue color */
   padding: 10px; /* Add padding for spacing */
-  height: 300px; /* Set a fixed height */
   overflow: auto; /* Add overflow to handle overflowing content */
-
 }
 
 .resume-content {
   flex-grow: 1; /* Allow content to grow to fill remaining space */
   display: flex;
-  align-items: center; /* Vertically center the content */
+  flex-direction: column;
+  justify-content: center;
   padding: 20px;
 }
 
@@ -73,6 +72,7 @@
 
 .section-text {
   color: #333; /* Set the color to a darker shade for better visibility */
+  font-weight: bold; /* Make the text thicker */
 }
 
 .education-entry {
@@ -93,14 +93,17 @@
 }
 
 .education-right {
+  flex: 1; /* Allow the right box to expand to fill remaining space */
   display: flex;
   flex-direction: column;
-  text-align: left; /* Vertically center the content */
   padding: 20px;
 }
 
-.section-text {
-  font-weight: bold; /* Make the text thicker */
+@media (max-width: 768px) {
+  .resume-details,
+  .education-entry {
+    flex: 0 0 100%; /* Set the width to 100% for single column layout on smaller screens */
+  }
 }
 
 .bootstrap-switch {
