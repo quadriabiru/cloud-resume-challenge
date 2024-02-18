@@ -120,10 +120,12 @@
 
   .resume-content {
     order: 2; /* Change the order to display resume-content after resume-details on mobile */
+    padding: 10px;
   }
 
   .education-right {
     order: 2; /* Change the order to display education-right under education-left on mobile */
+    padding: 10px;
   }
 }
 
