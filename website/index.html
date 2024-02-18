@@ -55,7 +55,7 @@
               <a class="btn btn-primary" href="resume/SWE Resume.pdf" data-aos="zoom-in" data-aos-anchor="data-aos-anchor" target="_blank">Software CV</a>
               <div style="height: 20px;"></div> <!-- Empty div for spacing -->
               <div style="height: 20px;"></div> <!-- Empty div for spacing -->
-              <!-- <p class="category text-white">View Count: <span id="counter-number"></span></p> -->
+              <p class="category text-white">View Count: <span id="counter-number"></span></p>
             </div>
           </div>
           <div>
@@ -132,13 +132,23 @@
         <div class="card" data-aos="fade-up" data-aos-offset="10">
           <div class="card-body">
             <div class="h4 mt-0 title" style="background-color: rgba(0, 119, 204, 0.7); padding: 20px;">Education </div>
-            <p><strong><i>University of Florida</i> </strong> - MS Electrical Engineering, December 2024</p>
-            <div style="height: 5px;"></div> <!-- Empty div for spacing -->
-            <p><strong><i>University of Florida</i> </strong> - BS Electrical Engineering, May 2022</p>
+            <div class="education-entry">
+              <div class="education-left">
+                <h4><strong>University of Florida</strong></h4>
+              </div>
+              <div class="education-right">
+                <ul>
+                  <li><em>MS Electrical Engineering</em>, December 2024</li>
+                  <div style="height: 20px;"></div> <!-- Empty div for spacing -->
+                  <div style="height: 20px;"></div> <!-- Empty div for spacing -->
+                  <li><em>BS Electrical Engineering</em>, May 2022</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </div>    
     <div class="section" id="experience" style="background-color: rgba(0, 119, 204, 0.1);">
       <div class="container">
         <div class="card" data-aos="fade-up" data-aos-offset="10">
@@ -146,35 +156,49 @@
             <div class="h4 mt-0 title" style="background-color: rgba(0, 119, 204, 0.7); padding: 20px;">Experience</div>
     
             <div class="resume-entry">
-              <h4><strong>UF Wireless and Mobile Systems Lab</strong></h4>
-              <p>Gainesville, FL</p>
-              <p><strong><i>Graduate Research Assistant, IoT Acres Project</i></strong></p>
-              <p>January 2023 – Present</p>
-              <p>
-                Led the development of an IoT system for construction site sensor data transmission, achieving a 75% reduction in device overhead. Conducted testing and optimized network infrastructure for enhanced reliability. Utilized cloud services for data accessibility and visualization.
-              </p>
+              <div class="resume-details">
+                <h4><strong>UF Wireless and Mobile Systems Lab</strong></h4>
+                <p>Gainesville, FL</p>
+                <p><strong><i>Graduate Research Assistant, IoT Acres Project</i></strong></p>
+                <p>January 2023 – Present</p>
+              </div>
+              <div class="resume-content">
+                <p>
+                  Led the development of an IoT system for construction site sensor data transmission, achieving a 75% reduction in device overhead. Conducted testing and optimized network infrastructure for enhanced reliability. Utilized cloud services for data accessibility and visualization.
+                </p>
+              </div>
+            </div>            
+    
+            <div class="resume-entry">
+              <div class="resume-details">
+                <h4><strong>Ethicon Endo-Surgery</strong></h4>
+                <p>Cincinnati, OH</p>
+                <p><strong><i>Research and Development Co-op</i></strong></p>
+                <p>September 2022 – December 2022</p>
+              </div>
+              <div class="resume-content">
+                <p>
+                  Collaborated on developing a test fixture for medical device component tracking. Engineered firmware for sensor communication and conducted comprehensive data analysis. Supported teams with real-time data visualization.
+                </p>
+              </div>
             </div>
     
             <div class="resume-entry">
-              <h4><strong>Ethicon Endo-Surgery</strong></h4>
-              <p>Cincinnati, OH</p>
-              <p><strong><i>Research and Development Co-op</i></strong></p>
-              <p>September 2022 – December 2022</p>
-              <p>
-                Collaborated on developing a test fixture for medical device component tracking. Engineered firmware for sensor communication and conducted comprehensive data analysis. Supported teams with real-time data visualization.
-              </p>
+              <div class="resume-details">
+                <h4><strong>F5 Networks</strong></h4>
+                <p>Seattle, WA</p>
+                <p><strong><i>Software Engineering Intern</i></strong></p>
+                <p>June 2022 – September 2022</p>
+              </div>
+              <div class="resume-content">
+                <p>
+                  Orchestrated Docker-based data pipeline for Digital Twin initiative, ensuring smooth sensor data transmission. Packaged and deployed pipeline on cloud platform. Enhanced network monitoring and security. Demonstrated proficiency in Git for version control.
+                </p>
+              </div>
             </div>
-    
-            <div class="resume-entry">
-              <h4><strong>F5 Networks</strong></h4>
-              <p>Seattle, WA</p>
-              <p><strong><i>Software Engineering Intern</i></strong></p>
-              <p>June 2022 – September 2022</p>
-              <p>
-                Orchestrated Docker-based data pipeline for Digital Twin initiative, ensuring smooth sensor data transmission. Packaged and deployed pipeline on cloud platform. Enhanced network monitoring and security. Demonstrated proficiency in Git for version control.
-              </p>
+            <div class="resume-footer">
+              <p>For more details, please refer to my <a href="#"> resumes </a></p>
             </div>
-            <p>For more details, please refer to my <a href="#"> resume </a></p>
           </div>
         </div>
       </div>
@@ -210,7 +234,11 @@
               <p>
                 Deployed a serverless <a href="https://bmi.quadriabiru.com" target="_blank">web application </a> on AWS leveraging S3 for storage and Route 53 for domain management. Leveraged AWS Lambda for serverless JavaScript, enabling real-time BMI calculations with API Gateway for function triggering. Implemented IAM policies to fortify application security by precisely defining access permissions within the AWS environment.
               </p>
-            </div>            
+            </div> 
+            <div style="height: 20px;"></div> <!-- Empty div for spacing -->
+            <div class="resume-footer">
+              <p>To check out more of my projects, please refer to my <a href="#"> resumes, GitHub or LinkedIn pages </a></p>
+            </div>           
           </div>
         </div>
       </div>

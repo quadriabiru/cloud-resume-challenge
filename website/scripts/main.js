@@ -41,3 +41,23 @@ $('a.smooth-scroll')
     }
   }
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Function to update the counter
+  async function updateCounter() {
+    try {
+      let response = await fetch("https://sr3qyx3ngogrh3pyy33n3mlamy0rseze.lambda-url.us-east-1.on.aws/");
+      let data = await response.json();
+      counterElement.innerText = data;
+    } catch (error) {
+      console.error("Error updating counter:", error);
+    }
+  }
+
+  // Select the counter element
+  var counterElement = document.getElementById("counter-number");
+
+  // Call the updateCounter function when the DOM is loaded
+  updateCounter();
+});
+
