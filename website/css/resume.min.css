@@ -4,14 +4,14 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
  */
 
- .btn.btn-primary{
-    background-color: #007bff;
+ .btn-primary {
+    background-color: #007bff; /* Default blue color */
 }
 
 .inline-elements {
     margin-bottom: 30px;
 }
-
+  
 .inline-elements h3,
 .inline-elements p {
     display: inline;
@@ -145,5 +145,5 @@ a {
 a:active,
 a:focus,
 a:hover {
-    color: #824027;
+    color: #007bff;
 }
