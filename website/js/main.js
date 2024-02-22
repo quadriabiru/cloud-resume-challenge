@@ -27,6 +27,40 @@
     });
 })(jQuery);
 
+$(document).ready(function() {
+    // Add click event listener to the circles
+    $('.list-social-icons .fa-stack').click(function() {
+        var $this = $(this);
+        // Toggle a class to change the color to gray when clicked
+        $this.toggleClass('clicked');
+    });
+});
+
+$(document).ready(function() {
+    // Function to hide the navbar when clicking outside
+    $(document).on("click", function(event) {
+        var navbar = $("#sideNav");
+        // Check if the click event target is not within the navbar or its toggle button
+        if (!navbar.is(event.target) && navbar.has(event.target).length === 0 && !$(".navbar-toggler").is(event.target)) {
+            // Collapse the navbar if it's currently expanded
+            if ($(".navbar-collapse").hasClass("show")) {
+                $(".navbar-toggler").click();
+            }
+        }
+    });
+
+    // Function to hide the navbar when scrolling
+    $(window).scroll(function() {
+        var navbarCollapse = $(".navbar-collapse");
+        // Check if the navbar is currently expanded
+        if (navbarCollapse.hasClass("show")) {
+            // Collapse the navbar
+            $(".navbar-toggler").click();
+        }
+    });
+});
+
+
 document.addEventListener("DOMContentLoaded", function() {
     // Function to update the counter
     async function updateCounter() {

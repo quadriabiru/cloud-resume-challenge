@@ -4,4 +4,3 @@
 *.hcl
 /infra/*
 *.zip
-/resume/*

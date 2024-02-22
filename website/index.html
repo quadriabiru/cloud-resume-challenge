@@ -21,7 +21,7 @@
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/resume.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
 
 
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" /> <!-- devicons -->
@@ -32,7 +32,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none">About Quadri</span>
+        <span class="d-block d-lg-none">echo $(whoami)</span>
         <span class="d-none d-lg-block">
           <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/headshot.jpg" alt="">
         </span>
@@ -58,7 +58,7 @@
             <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#projects">View Count: <span id="counter-number"></span></a>
+            <a class="nav-link js-scroll-trigger" href="#">View Count: <span id="counter-number"></span></a>
           </li>
         </ul>
       </div>
@@ -92,11 +92,23 @@
               </li>
             </ul>  
           </div>
-          <p class="mb-5">I'm currently pursuing a Master's degree in Electrical Engineering at the University of Florida, set to graduate in December 2024. I pride myself on being a dynamic engineer with a versatile skill set, capable of tackling diverse challenges across various projects.</p>
-          <p class="mb-5">My experiences, spanning internships, research, coursework, and personal projects, have honed my skills in both hardware and software domains. On the hardware side, I possess working knowledge of VLSI, coupled with hands-on experience in analog circuit design and PCB layout & routing. In software, I am highly proficient in Python, leveraging it to develop various programs and scripts. I have expertise in utilizing common libraries such as NumPy, Pandas, and Matplotlib to analyze data and visualize results effectively.</p>
-          <p class="mb-5">Additionally, I have a strong background in embedded programming using C/C++, with practical experience on platforms like Raspberry Pi, STM32, MSP40, and ESP32/8266. My solid understanding of communication protocols complements this skill set. Moreover, I am adept in pivotal microservices tools like Docker and Kubernetes, as well as the Amazon Web Services Platform.</p>
-          <a class="btn btn-primary" href="resume/EE Resume.pdf" target="_blank">Hardware CV</a>
-          <a class="btn btn-primary" href="resume/SWE Resume.pdf" target="_blank">Software CV</a>
+          <p class="mb-5">
+            I am an ambitious Electrical Engineering graduate student at the esteemed University of Florida, poised to complete my Master's degree in December 2024. As a dynamic engineer, I bring to the table a versatile skill set tailored to tackle a wide array of challenges across diverse projects.
+          </p>
+          <p class="mb-5">
+            Through a blend of valuable internships, impactful research endeavors, challenging coursework, and engaging personal projects, I've cultivated a balanced skill set spanning both hardware and software realms. 
+            In hardware, I've developed a solid foundation in VLSI, alongside practical skills in analog circuit design and PCB layout & routing. 
+            Similarly, my software expertise in Python and C/C++ allows me to craft tailored solutions, including programs, scripts, and firmware, optimized for diverse hardware platforms like Raspberry Pi, STM32, MSP40, and ESP32/8266. 
+            This proficiency is further enhanced by my adeptness in communication protocols, facilitating seamless sensor integrations.
+          </p>
+          <p class="mb-5">
+            Furthermore, my proficiency extends to the cloud domain, where I excel in leveraging pivotal microservices and orchestrating infrastructure using cutting-edge tools such as Docker, Kubernetes, and Terraform. With a high level of understanding in the Amazon Web Services platform, I am poised to drive impactful innovations in cloud-based solutions.
+          </p>
+          <p class="mb-5">
+            Speaking of which, this resume page is 100% hosted on AWS infrastructure as part of a <a href="https://cloudresumechallenge.dev/docs/the-challenge/aws/" target="_blank">cloud resume challenge</a>, you can check out the <a href="https://github.com/quadriabiru/cloud-resume-challenge" target="_blank"> repo</a> to learn more.
+          </p>
+          <a class="btn btn-primary" href="resumes/EE Resume.pdf" target="_blank">Hardware CV</a>
+          <a class="btn btn-primary" href="resumes/SWE Resume.pdf" target="_blank">Software CV</a>
         </div>
       </section>
 
@@ -162,7 +174,7 @@
           <ul class="fa-ul mb-0">
             <li>
               <i class="fa-li fa fa-check"></i>
-              Excellent Teamwork</li>
+              Collaborator</li>
             <li>
               <i class="fa-li fa fa-check"></i>
               Critical Thinker</li>
@@ -199,7 +211,7 @@
               <span class="text-primary">January 2023 - December 2024</span>
             </div>
           </div>
-          <div style="height: 20px;"></div> <!-- Empty div for spacing -->
+          <div style="height: 40px;"></div> <!-- Empty div for spacing -->
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">University of Florida</h3>
@@ -260,7 +272,7 @@
           </div>
 
           <div class="resume-footer">
-            <p>For more details, please refer to my <a href="#"> resumes </a></p>
+            <p>For more details, please refer to my <a href="#"> resume </a></p>
           </div>
 
         </div>
@@ -293,7 +305,7 @@
             <div class="resume-content mr-auto">
               <h3 class="mb-0">UF Hydro Patrol Project</h3>
               <p>
-                Enabled miniaturization by using given specifications to layout and route custom PCBs for a research project. Reduced interference and improved signal integrity by incorporating MOSFET switches to isolate sensor probe signals. Performed continuity testing and assembled the PCB using surface mount soldering techniques.
+                Facilitated miniaturization efforts by meticulously designing and routing custom PCBs based on provided specifications for a pivotal research initiative. Enhanced signal integrity and minimized interference through the strategic integration of MOSFET switches to effectively isolate sensor probe signals. Executed comprehensive continuity testing and proficiently assembled the PCBs utilizing advanced surface mount soldering techniques.
               </p>
             </div>
           </div>
@@ -302,13 +314,13 @@
             <div class="resume-content mr-auto">
               <h3 class="mb-0">AWS Serverless BMI Calculator</h3>
               <p>
-                Deployed a serverless <a href="https://bmi.quadriabiru.com" target="_blank">web application </a> on AWS leveraging S3 for storage and Route 53 for domain management. Leveraged AWS Lambda for serverless JavaScript, enabling real-time BMI calculations with API Gateway for function triggering. Implemented IAM policies to fortify application security by precisely defining access permissions within the AWS environment.
+                Implemented a serverless <a href="https://bmi.quadriabiru.com" target="_blank">web application </a>  deployment strategy on AWS, utilizing S3 for scalable storage and Route 53 for efficient domain management. Employed AWS Lambda for serverless JavaScript execution, facilitating real-time BMI calculations integrated with API Gateway for seamless function invocation. Strengthened application security through the meticulous implementation of IAM policies, ensuring precise access control and permissions within the AWS ecosystem.
               </p>
             </div>
           </div>
 
           <div class="resume-footer">
-            <p>To check out more of my projects, please refer to my <a href="#"> resumes, GitHub or LinkedIn pages </a></p>
+            <p>To check out more of my projects, please refer to my <a href="#"> resume, GitHub or LinkedIn pages </a></p>
           </div> 
 
         </div>
@@ -324,7 +336,7 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="js/resume.min.js"></script>
+    <script src="js/main.js"></script>
 
   </body>
 
